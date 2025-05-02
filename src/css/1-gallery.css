@@ -1,0 +1,16 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.gallery-item {
+  width: calc((100% - 48px) / 3);
+}
+.gallery-image {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gallery-link:hover .gallery-image {
+  transform: scale(1.04);
+}
